@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/admin_main_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="管理员操作"
+            android:textColor="@color/app_white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/admin_main_bt_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_main_bt_maincolor"
+                android:text="用户管理"
+                android:textColor="@color/app_white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/admin_main_bt_lunbo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_main_bt_maincolor"
+                android:text="轮播图管理"
+                android:textColor="@color/app_white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/admin_main_bt_bulltext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_main_bt_maincolor"
+                android:text="文字热销推广管理"
+                android:textColor="@color/app_white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/admin_main_bt_goodsinfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_main_bt_maincolor"
+                android:text="商品信息管理"
+                android:textColor="@color/app_white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/admin_main_bt_bill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_main_bt_maincolor"
+                android:text="订单管理"
+                android:textColor="@color/app_white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

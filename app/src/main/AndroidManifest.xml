@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:uses-permissionandroid="http://schemas.android.com/apk/distribution"
+    package="com.example.fleamarket">
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 监听网络的变化 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 设备休眠 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--摄像头-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--录音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--通知震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_main"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".view.activity.LoginActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.RegisterActivity">
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <activity android:name=".view.activity.MainActivity" />
+        <activity android:name=".view.activity.SearchActivity" />
+        <activity android:name=".view.activity.SearchInfoActivity" />
+        <activity android:name=".view.activity.AddGoodsActivity" />
+        <activity android:name=".view.activity.CheckStuActivity" />
+        <activity android:name=".view.activity.TakePhotoActivity" />
+        <activity android:name=".view.activity.GoodsInfoActivity" />
+        <activity android:name=".view.activity.ClassifyGoodsActivity" />
+        <activity android:name=".view.activity.AnalyzeActivity" />
+        <activity android:name=".view.activity.AnalyzeWebActivity" />
+        <activity android:name=".view.activity.MyInfoActivity" />
+        <activity android:name=".view.activity.MyfabuActivity" />
+        <activity android:name=".view.activity.MySellActivity" />
+        <activity android:name=".view.activity.MyFabuUpActivity" />
+        <activity android:name=".view.activity.MyCollectActivity" />
+        <activity
+            android:name=".view.activity.ChatActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".view.activity.MyAddrActivity" />
+        <activity android:name=".view.activity.AddMyAddressActivity" />
+        <activity android:name=".view.activity.UpdaAddrActivity" />
+        <activity android:name=".view.activity.ContactActivity" />
+        <activity android:name=".view.activity.ChooseLocationActivity" />
+        <activity android:name=".view.activity.BuyGoodsActivity" />
+        <activity android:name=".view.activity.BrowsGoodsHistoryActivity" />
+        <activity android:name=".view.activity.SettingActivity" />
+        <activity android:name=".view.activity.ChangePassActivity" />
+        <activity android:name=".view.activity.PayActivity" />
+        <activity android:name=".view.activity.BillInfoActivity" />
+        <activity android:name=".view.activity.MyBuyActivity" />
+
+        <activity android:name=".view.activity.admin.AdminMainActivity" />
+
+        <activity android:name=".view.activity.admin.AdminUser.AdminUserActivity" />
+        <activity android:name=".view.activity.admin.AdminUser.AdminUserInfoActivity" />
+
+        <activity android:name=".view.activity.admin.AdminLunbo.AdminLunBoInfoActivity" />
+        <activity android:name=".view.activity.admin.AdminLunbo.AdminLunBoActivity" />
+        <activity android:name=".view.activity.admin.AdminLunbo.AdminAddLunBoInfoActivity" />
+        <activity android:name=".view.activity.admin.AdminLunbo.AdminUpdLunBoActivity" />
+
+        <activity android:name=".view.activity.admin.AdminBullText.AdminBullTextActivity" />
+        <activity android:name=".view.activity.admin.AdminBullText.AdminAddBullTextActivity" />
+
+        <activity android:name=".view.activity.admin.AdminGoods.AdminGoodsActivity" />
+        <activity android:name=".view.activity.admin.AdminGoods.AdminGoodsAuditActivity" />
+
+        <activity android:name=".view.activity.admin.AdminBill.AdminBillActivity" />
+        <activity android:name=".view.activity.admin.AdminBill.AdminBillInfoActivity" />
+
+        <!--TODO 集成：1.3、配置Bmob平台的应用密钥-->
+        <meta-data
+            android:name="Bmob_APP_KEY"
+            android:value="6eea61f8560e5a0049bce34b67ede601" />
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.fleamarket.BmobContentProvider"></provider>
+
+        <!--TODO 集成：1.5、配置IM SDK需要的广播和服务-->
+        <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.action.RECONNECT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.bmob.newim.core.service.BmobIMService"
+            android:process=":bmobcore" />
+        <service
+            android:name="cn.bmob.newim.core.service.NotifyService"
+            android:process=":bmobcore" />
+        <service android:name="cn.bmob.newim.core.service.ReConnectService" />
+        <service android:name="cn.bmob.newim.core.service.HeartBeatService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_bulltext">
+    <TextView
+        android:id="@+id/item_bulltext_title"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="12dp"
+        android:textColor="@color/app_black"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/msg_number"
+    android:layout_width="16dp"
+    android:layout_height="16dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="40dp"
+    android:padding="2dp"
+    android:text="8"
+    android:textSize="8dp"
+    android:gravity="center"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/bg_circle"
+    />
+</RelativeLayout>

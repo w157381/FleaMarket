@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>价格从高到低</item>
+        <item>价格从低到高</item>
+    </string-array>
+</resources>

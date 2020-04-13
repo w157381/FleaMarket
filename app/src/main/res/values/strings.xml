@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">跳蚤市场</string>
+
+    <!--acticity_login-->
+    <string name="app_login">登 录</string>
+    <string name="app_resgiter">注  册</string>
+    <string name="app_checkstu">学生身份验证</string>
+    <string name="app_perfectInfo">信息完善</string>
+    <string name="app_forgetPassword">忘记密码</string>
+    <string name="app_stuId">学号</string>
+    <string name="app_stupassword">密码</string>
+    <string name="app_jiaowusystem">输入教务系统密码</string>
+    <string name="app_gocheck">开始验证</string>
+    <string name="app_nickname">你的昵称</string>
+    <string name="app_nickname_left">昵称</string>
+    <string name="app_jieshao">简单的介绍一下自己吧~</string>
+    <string name="app_jieshao_left">个性签名</string>
+    <string name="app_locationnow">现住地址</string>
+    <string name="app_password">登录密码</string>
+    <string name="app_passwordag">确认密码</string>
+    <string name="app_sure">确认</string>
+    <string name="app_sure1">确 认</string>
+    <string name="app_quxiao">取消</string>
+    <string name="app_location_now">宝贝当前位置:</string>
+    <!--frag_main-->
+    <string name="main_title">首 页</string>
+    <!--item_frag_addmenu-->
+    <string name="main_addmenu_addinfo">发布物品</string>
+    <!--item_frag_main2 -->
+    <!--    1.图书类",2."手机数码",3."生活百货",4."学习办公",5."代步工具",6."运动户外",7."鞋子",8."服饰",9."箱包",10."其他"-->
+    <string name="main_type_01">图书类</string>
+    <string name="main_type_02">手机数码</string>
+    <string name="main_type_03">生活百货</string>
+    <string name="main_type_04">学习办公</string>
+    <string name="main_type_05">代步工具</string>
+    <string name="main_type_06">运动户外</string>
+    <string name="main_type_07">鞋子</string>
+    <string name="main_type_08">服饰</string>
+    <string name="main_type_09">箱包</string>
+    <string name="main_type_10">其他</string>
+    <!--    AddGoodsActivity-->
+    <string name="main_add_title">发 布</string>
+    <string name="main_add_type">商品类型</string>
+    <string name="main_add_jieshao">品牌型号，新旧程度，入手渠道，转手原因...</string>
+    <string name="main_add_kaiprice">开个价</string>
+    <string name="main_add_price">价 格</string>
+    <string name="main_add_inprice">入手价格</string>
+    <string name="main_add_post">运 费</string>
+    <string name="main_add_yuan">元</string>
+    <!--frag_message-->
+    <string name="message_title">消 息</string>
+
+
+    <!--frag_mine-->
+    <string name="mime_quit">退 出</string>
+    <string name="setting">设 置</string>
+
+
+
+    <string name="info_zan">点赞</string>
+    <string name="info_comment">留言</string>
+    <string name="info_collect">收藏</string>
+
+    <string name="mine_maichu">卖出</string>
+    <string name="mine_mairu">买入</string>
+
+    <string name="mine_goods_fabu">我的发布</string>
+    <string name="mine_goods_maichu">我卖出的</string>
+    <string name="mine_goods_mairu">我买入的</string>
+    <string name="mine_goods_collect">我收藏的</string>
+
+    <string name="mine_setting_getgoodslocation">收货地址</string>
+    <string name="mine_setting_account">账 号</string>
+    <string name="mine_setting_kuaidi">我的快递</string>
+    <string name="mine_setting_about">关于我们</string>
+    <string name="mine_setting_wallet">我的钱包</string>
+
+    <string name="mine_setting_qiandao">签到</string>
+    <string name="mine_setting_qiandao2">已签到</string>
+    <string name="share">分享宝贝</string>
+</resources>

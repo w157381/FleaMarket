@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_main">
+
+       <ImageView
+           android:id="@+id/search_back"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_margin="10dp"
+           android:src="@drawable/back"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text|textAutoComplete|textNoSuggestions"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_white2" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_rela"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="历史记录"/>
+        <ImageView
+            android:id="@+id/search_del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delect_gray"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

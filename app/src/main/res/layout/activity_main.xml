@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+    <RelativeLayout
+        android:id="@+id/main_alert_rela"
+        android:layout_width="40dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:id="@+id/main_user_mess_dis"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/login_input_account_clear"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_user_mess"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="120dp"/>
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:itemTextColor="@drawable/home_color_shape"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

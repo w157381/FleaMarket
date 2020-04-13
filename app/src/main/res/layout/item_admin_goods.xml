@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/bg_recyc_selector2"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_admin_goods_userhead"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/item_admin_goods_username"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="2dp"
+            android:textSize="16dp"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/app_black"/>
+        <TextView
+            android:id="@+id/item_admin_goods_state"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/app_maincolor"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_admin_goods_img"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/item_admin_goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/item_admin_goods_price"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:textColor="@color/app_red"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp" />
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical|right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/item_admin_goods_bt_del"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_main_bt_red"
+            android:text="删除"
+            android:textColor="@color/app_white" />
+        <Button
+            android:id="@+id/item_admin_goods_bt_gopass"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_main_bt_yellow"
+            android:text="去审核"
+            android:textColor="@color/app_white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

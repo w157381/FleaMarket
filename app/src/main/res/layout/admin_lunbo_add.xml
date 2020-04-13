@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/admin_addlunbo_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/admin_addlunbo_ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加轮播信息"
+            android:textColor="@color/app_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="标题" />
+
+            <EditText
+                android:id="@+id/admin_addlunbo_et_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_white"
+                android:gravity="center_vertical|left"
+                android:hint="简短的题目"
+                android:maxEms="30"
+                android:textColor="@color/app_black"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="URL网址" />
+
+            <EditText
+                android:id="@+id/admin_addlunbo_et_url"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_white"
+                android:gravity="center_vertical|left"
+                android:hint="访问的网址"
+                android:textColor="@color/app_black"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_addlunbo_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/admin_addlunbo_img"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                fresco:fadeDuration="300"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:placeholderImage="@drawable/ic_camera"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/admin_addlunbo_sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_main_bt_maincolor"
+        android:text="确 定"
+        android:textColor="@color/app_white"
+        android:textSize="20dp" />
+</RelativeLayout>

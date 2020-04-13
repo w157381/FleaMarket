@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#009688</color>
+
+    <color name="tab_checked">#009688</color>
+    <color name="tab_unchecked">#757575</color>
+
+    <!-- 我的-->
+    <color name="app_maincolor">#009688</color>
+    <color name="app_gray80">#80B4B1B1</color>
+    <color name="app_gray">#B4B1B1</color>
+    <color name="app_blue">#03A9F4</color>
+    <color name="app_yy">#F44336</color>
+    <color name="app_alert">#a1a3a6</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="app_orange">#e16531</color>
+
+    <color name="app_white_tou">#48E9E7E7</color>
+    <color name="app_red">#AC0202</color>
+    <color name="app_black">#000000</color>
+
+    <color name="app_price">#DB0707</color>
+    <color name="app_inprice">#FFC107</color>
+    <color name="app_postprice">#0BB1A1</color>
+
+    <color name="app_credit1">#005831</color>
+    <color name="app_credit2">#1d953f</color>
+    <color name="app_credit3">#f47920</color>
+    <color name="app_credit4">#ed1941</color>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/bg_white2"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_addr_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="14dp"
+        android:textColor="@color/app_black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_addr_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_main_bt_maincolor"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textColor="@color/app_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_addr_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/bg_main_bt_yy"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textColor="@color/app_white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_addr_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/item_addr_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="12dp" />
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/admin_userinfo_rela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/admin_userinfo_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户信息"
+            android:textColor="@color/app_white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_white"
+                    android:gravity="center"
+                    android:text="学号" />
+
+                <TextView
+                    android:id="@+id/admin_userinfo_stunum"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/bg_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_white"
+                    android:gravity="center"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/admin_userinfo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/bg_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_white"
+                    android:gravity="center"
+                    android:text="院系" />
+
+                <TextView
+                    android:id="@+id/admin_userinfo_depart"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/bg_white" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/admin_userinfo_bt_fenghao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:text="封 号"
+                android:textColor="@color/app_white"
+                android:textSize="20dp"
+                android:background="@drawable/bg_main_bt_red" />
+
+            <Button
+                android:id="@+id/admin_userinfo_bt_dongjie"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="冻结三天"
+                android:textColor="@color/app_white"
+                android:textSize="20dp"
+                android:background="@drawable/bg_main_bt_yellow" />
+
+            <Button
+                android:id="@+id/admin_userinfo_bt_unfenghao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="解除封号"
+                android:textColor="@color/app_white"
+                android:textSize="20dp"
+                android:background="@drawable/bg_main_bt_red" />
+
+            <Button
+                android:id="@+id/admin_userinfo_bt_undongjie"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="解除冻结"
+                android:textColor="@color/app_white"
+                android:textSize="20dp"
+                android:background="@drawable/bg_main_bt_yellow" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/admin_userinfo_bt_send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_main"
+        android:text="发信息"
+        android:textColor="@color/app_white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

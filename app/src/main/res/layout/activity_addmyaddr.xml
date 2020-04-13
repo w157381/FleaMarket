@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/addaddr_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建地址"
+            android:textColor="@color/app_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="收货人"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addaddr_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@null"
+                    android:hint="请填写收货人姓名"
+                    android:textColor="@color/app_black"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/addaddr_img_contact"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@drawable/contact" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="手机号码"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addaddr_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@null"
+                    android:hint="请填写收货人手机号"
+                    android:textColor="@color/app_black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="所在地区"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addaddr_locationa"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@null"
+                    android:hint="省市区县、乡镇等"
+                    android:textColor="@color/app_black"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/addaddr_img_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+
+                    android:src="@drawable/location_now" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/app_white">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="详细街道"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addaddr_locationb"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="街道、楼牌号等"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:minLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/app_black"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textSize="14dp" />
+
+                <RadioGroup
+                    android:id="@+id/addaddr_RadioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/addaddr_radio01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_check"
+                        android:button="@null"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="家"
+                        android:textColor="@color/app_white" />
+
+                    <RadioButton
+                        android:id="@+id/addaddr_radio02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio_check"
+                        android:button="@null"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="学校"
+                        android:textColor="@color/app_white" />
+
+                    <RadioButton
+                        android:id="@+id/addaddr_radio03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio_check"
+                        android:button="@null"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="公司"
+                        android:textColor="@color/app_white" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/app_white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="设为默认地址"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="提醒：每次下单默认推荐该地址"
+                    android:textSize="10dp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/addaddr_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:longClickable="false"
+                    android:padding="5dp"
+                    android:textColor="@color/app_white"
+                    android:textOff="Off"
+                    android:textOn="On"
+                    android:theme="@style/MySwitchTheme"
+                    app:showText="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addaddr_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_main_bt_maincolor"
+        android:text="保存地址"
+        android:textColor="@color/app_white"
+        android:textSize="16dp" />
+</RelativeLayout>

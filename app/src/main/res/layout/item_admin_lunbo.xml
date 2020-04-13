@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/bg_recyc_selector"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/item_admin_lunbo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="120dp"
+        android:maxEms="30"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/app_black" />
+
+    <Button
+        android:id="@+id/item_admin_lunbo_upd"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:text="修改"
+        android:textColor="@color/app_white"
+        android:background="@drawable/bg_main_bt_yellow"/>
+
+   <Button
+       android:id="@+id/item_admin_lunbo_del"
+       android:layout_width="50dp"
+       android:layout_height="30dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="5dp"
+       android:text="删除"
+       android:textColor="@color/app_white"
+       android:background="@drawable/bg_main_bt_red"/>
+</RelativeLayout>

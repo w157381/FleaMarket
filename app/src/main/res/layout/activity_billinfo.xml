@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/bill_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单详情"
+            android:textColor="@color/app_white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_white">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/bill_gods_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/bill_goods_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_black"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="订单号"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/bill_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@color/app_black"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="买家昵称"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/bill_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@color/app_black"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="支付方式" />
+                <TextView
+                    android:id="@+id/bill_paytype"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@color/app_black"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="交易金额"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/bill_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@color/app_black"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="交易时间"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/bill_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

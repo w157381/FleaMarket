@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_homefirst"
+        android:icon="@drawable/youyu"
+        android:title="主页"
+        android:tooltipText="drr" />
+    <item
+        android:id="@+id/navigation_homesecond"
+        android:icon="@drawable/xiaoxi1"
+        android:title="消息" />
+
+    <item
+        android:id="@+id/navigation_homethird"
+        android:icon="@drawable/kuaidi1"
+        android:title="我的" />
+
+</menu>

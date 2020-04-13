@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="120dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_img_img"
+        android:layout_width="80dp"
+        android:layout_height="120dp"/>
+    <ImageView
+        android:id="@+id/item_img_img_del"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/login_input_account_clear"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/item_img_img_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主图"
+        android:textSize="12dp"
+        android:textColor="@color/app_maincolor"/>
+</RelativeLayout>
